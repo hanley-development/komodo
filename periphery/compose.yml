@@ -14,7 +14,7 @@ services:
         USER 1000:1000
         WORKDIR /home/<USER>
         ENV HOME=/home/<USER>
-    command: periphery --config-path /home/mhanl/docker/stacks/komodo/data/periphery.config.base.toml
+    command: periphery --config-path /home/<USER>/docker/stacks/komodo/data/periphery.config.base.toml
     user: 1000:1000
     image: ghcr.io/moghtech/komodo-periphery:${COMPOSE_KOMODO_IMAGE_TAG:-latest}
     networks:

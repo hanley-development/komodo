@@ -72,8 +72,8 @@ services:
       dockerfile_inline: |
         FROM ghcr.io/moghtech/komodo-periphery:${COMPOSE_KOMODO_IMAGE_TAG:-latest}
         USER 1000:1000
-        WORKDIR /home/mhanl
-        ENV HOME=/home/mhanl
+        WORKDIR /home/<USER>
+        ENV HOME=/home/<USER>
     user: 1000:1000
     image: ghcr.io/moghtech/komodo-periphery:${COMPOSE_KOMODO_IMAGE_TAG:-latest}
     networks:

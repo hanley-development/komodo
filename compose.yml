@@ -92,7 +92,7 @@ services:
       PERIPHERY_PASSKEYS_FILE: /run/secrets/komodo_passkey
     volumes:
       - /proc:/proc
-      - /home/mhanl/docker:/home/mhanl/docker
+      - /home/<USER>/docker:/home/<USER>/docker
   socket-proxy:
     image: lscr.io/linuxserver/socket-proxy:latest
     environment:
